@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="2"
+        tools:context="com.example.mohamed.tourguideapp.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="@string/main_welcome"
+                android:textColor="@color/colorWelcomeTextView1"
+                android:textSize="@dimen/activity_main_welcome"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/egyptwelcome2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tours_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_text_view_height"
+                android:layout_marginTop="@dimen/spaces"
+                android:background="@color/colorWelcomeTextView1"
+                android:text="@string/tours"
+                android:textAlignment="center"
+                android:textSize="@dimen/activity_main_welcome" />
+
+            <TextView
+                android:id="@+id/transportation_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_text_view_height"
+                android:layout_marginTop="@dimen/spaces"
+                android:background="@color/colorWelcomeTextView2"
+                android:text="@string/transportation"
+                android:textAlignment="center"
+                android:textSize="@dimen/activity_main_welcome" />
+
+            <TextView
+                android:id="@+id/why_egypt_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_text_view_height"
+                android:layout_marginTop="@dimen/spaces"
+                android:background="@color/colorWelcomeTextView3"
+                android:text="@string/whyegypt"
+                android:textAlignment="center"
+                android:textSize="@dimen/activity_main_welcome" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
